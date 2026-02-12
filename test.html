@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morse Designs</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: #0f0f0f;
+        color: #f5f5f5;
+        line-height: 1.6;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    header {
+        padding: 2rem 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-weight: 700;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    nav a {
+        margin-left: 2rem;
+        font-weight: 400;
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        opacity: 1;
+    }
+
+    .hero {
+        padding: 8rem 8% 6rem;
+        max-width: 1000px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+        max-width: 600px;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 0.9rem 1.8rem;
+        background: #ffffff;
+        color: #000;
+        font-weight: 600;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #ddd;
+    }
+
+    .section {
+        padding: 6rem 8%;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .card {
+        background: #1a1a1a;
+        padding: 2rem;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        background: #222;
+    }
+
+    footer {
+        padding: 4rem 8%;
+        text-align: center;
+        opacity: 0.6;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Morse Designs</div>
+    <nav>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Creative websites.<br>Engineered to perform.</h1>
+    <p>I design and build modern, high-performing websites for brands, startups, and businesses that want to stand out and scale with confidence.</p>
+    <a href="#contact" class="btn">Start a Project</a>
+</section>
+
+<section class="section" id="services">
+    <h2>What I Do</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Custom Website Design</h3>
+            <p>Modern, responsive designs crafted to reflect your brand and convert visitors into customers.</p>
+        </div>
+        <div class="card">
+            <h3>Full-Stack Development</h3>
+            <p>Scalable front-end and back-end solutions built with performance, security, and maintainability in mind.</p>
+        </div>
+        <div class="card">
+            <h3>Product & Startup Builds</h3>
+            <p>From MVP to production-ready platforms — built clean, fast, and ready to grow.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Let’s Build Something Great</h2>
+    <p>Have an idea or project in mind? Let’s talk about how we can bring it to life.</p>
+    <br>
+    <a href="mailto:hello@morsedesigns.com" class="btn">Get in Touch</a>
+</section>
+
+<footer>
+    © 2026 Morse Designs. Built by Morse.
+</footer>
+
+</body>
+</html>
