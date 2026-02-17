@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jacob Hobbs | Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/index.css">
+
+<style>
+/* Fade-in animation for cards */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.section {
+    padding: 6rem 8%;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* start hidden for fade-in */
+}
+
+.card.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Hover lift */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card .btn {
+    margin-top: auto;
+    background-color: #0056B3;
+    color: #FFF;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0px 4px 15px rgba(0,168,255,0.7);
+    transition: transform 0.3s ease;
+}
+
+.card .btn:hover {
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* Stagger animation using nth-child */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="top-nav">
+    <div class="logo">Built By Morse</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="work.html">Previous Work</a>
+        <a href="services.html">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section class="projects-hero">
+    <div class="hero-inner">
+        <h1>Our Services</h1>
+        <p>
+            Modern solutions crafted to elevate your brand and help your business perform.
+            Explore our offerings below.
+        </p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="section">
+    <h2>What We Offer</h2>
+
+    <div class="services">
+        <!-- Service 1 -->
+        <div class="card fade-in">
+            <h3>Web Design</h3>
+            <p>Custom, conversion-focused websites with modern UI/UX, responsive layouts, and clean visuals that engage users.</p>
+            <a href="#contact" class="btn">Learn More</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card fade-in">
+            <h3>Branding & Identity</h3>
+            <p>Create a consistent, professional brand identity including logos, color schemes, typography, and design guidelines.</p>
+            <a href="#contact" class="btn">Learn More</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card fade-in">
+            <h3>SEO & Marketing</h3>
+            <p>Optimize your website and content for search engines while implementing strategies to drive traffic and conversions.</p>
+            <a href="#contact" class="btn">Learn More</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="card fade-in">
+            <h3>Content Strategy</h3>
+            <p>Plan and create compelling content for blogs, websites, and social media that resonates with your audience.</p>
+            <a href="#contact" class="btn">Learn More</a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="card fade-in">
+            <h3>Website Maintenance</h3>
+            <p>Ongoing website updates, performance monitoring, and security checks to keep your site running smoothly.</p>
+            <a href="#contact" class="btn">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="section" id="contact">
+    <h2>Start Your Project</h2>
+    <p>Have a project in mind? Let’s build something exceptional together.</p>
+    <br>
+    <a href="mailto:youremail@email.com" class="btn">Contact Us</a>
+</section>
+
+<footer>
+    © 2026 Jacob Hobbs. Designed & Developed by Jacob.
+</footer>
+
+<script>
+// Optional: Trigger stagger fade-in on page load
+document.querySelectorAll('.card').forEach((card, i) => {
+    card.style.animationDelay = `${(i + 1) * 0.1}s`;
+});
+</script>
+
+</body>
+</html>
