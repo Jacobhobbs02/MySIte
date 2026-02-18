@@ -552,6 +552,7 @@ footer {
         gap: 1rem;
     }
 
+.
     .hero-content {
         font-size: 26px;
         margin-top: 15%;
@@ -786,4 +787,57 @@ footer {
         padding: 20px;
         font-size: 0.95rem;
     }
+}
+
+/* Laptops / small desktops (max-width: 1366px) */
+@media (max-width: 1366px) {
+
+    /* HERO FIX */
+    .hero-container {
+        height: 75vh;
+        align-items: flex-start;
+    }
+
+    .hero-content {
+        margin-top: 0;     
+        padding: 10vh 6vw;            
+        max-width: 900px;
+        font-size: 26px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+        line-height: 1.15;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        max-width: 520px;
+    }
+
+    .growth {
+        height: auto; 
+        margin-top: 8vh;
+        margin-bottom: 12vh;
+        padding: 0 5vw;
+    }
+
+    .growth-header {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .growth-hero {
+        gap: 30px;
+    }
+
+    .growth-item {
+        max-width: 600px;
+        padding: 40px 35px;
+    }
+
+    .growth-item h3 {
+        font-size: 1.8rem;
+    }
+
 }
