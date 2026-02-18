@@ -223,14 +223,6 @@ footer {
     position: relative;
 }
 
-.section-divider {
-    height: 120px;
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        #0f0f0f
-    );
-}
 
 .sub-section {
     background: #1a1a1a;
